@@ -21,10 +21,12 @@ namespace UseJiebaSegmenter
             //string txt = "7年整治未成 6億形同丟水溝";
             //var segments = segmenter.Cut(txt);
             //Label2.Text = string.Join("/ ", segments);
-            //Label2.Text = JiebaService.onStart(2);
+            Label2.Text = JiebaService.onStart(2);
 
-            ListView_result.DataSource = JiebaService.onStart(2);
-            ListView_result.DataBind();
+            //ListView_result.DataSource = JiebaService.onStart(2);
+            //ListView_result.DataBind();
+
+
         }
     }
 }

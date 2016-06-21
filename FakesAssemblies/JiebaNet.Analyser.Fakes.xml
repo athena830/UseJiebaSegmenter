@@ -1,0 +1,761 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>JiebaNet.Analyser.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:JiebaNet.Analyser.Fakes.ShimConfigManager">
+            <summary>JiebaNet.Analyser.ConfigManager 的填充碼類型</summary>
+        </member>
+        <member name="M:JiebaNet.Analyser.Fakes.ShimConfigManager.#ctor">
+            <summary>初始化新填充碼執行個體</summary>
+        </member>
+        <member name="M:JiebaNet.Analyser.Fakes.ShimConfigManager.#ctor(JiebaNet.Analyser.ConfigManager)">
+            <summary>初始化指定執行個體的新填充碼</summary>
+        </member>
+        <member name="M:JiebaNet.Analyser.Fakes.ShimConfigManager.BehaveAsCurrent">
+            <summary>指派填充類型之所有方法的 &apos;Current&apos; 行為</summary>
+        </member>
+        <member name="M:JiebaNet.Analyser.Fakes.ShimConfigManager.BehaveAsNotImplemented">
+            <summary>指派填充類型之所有方法的 &apos;NotImplemented&apos; 行為</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimConfigManager.Behavior">
+            <summary>指派填充類型之所有方法的行為</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimConfigManager.Constructor">
+            <summary>設定 ConfigManager.ConfigManager() 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimConfigManager.IdfFileGet">
+            <summary>設定 ConfigManager.get_IdfFile() 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimConfigManager.StopWordsFileGet">
+            <summary>設定 ConfigManager.get_StopWordsFile() 的 填充碼</summary>
+        </member>
+        <member name="T:JiebaNet.Analyser.Fakes.ShimConfigManager.AllInstances">
+            <summary>定義所有執行個體成員的填充碼</summary>
+        </member>
+        <member name="T:JiebaNet.Analyser.Fakes.ShimEdge">
+            <summary>JiebaNet.Analyser.Edge 的填充碼類型</summary>
+        </member>
+        <member name="M:JiebaNet.Analyser.Fakes.ShimEdge.#ctor">
+            <summary>初始化新填充碼執行個體</summary>
+        </member>
+        <member name="M:JiebaNet.Analyser.Fakes.ShimEdge.#ctor(JiebaNet.Analyser.Edge)">
+            <summary>初始化指定執行個體的新填充碼</summary>
+        </member>
+        <member name="M:JiebaNet.Analyser.Fakes.ShimEdge.BehaveAsCurrent">
+            <summary>指派填充類型之所有方法的 &apos;Current&apos; 行為</summary>
+        </member>
+        <member name="M:JiebaNet.Analyser.Fakes.ShimEdge.BehaveAsNotImplemented">
+            <summary>指派填充類型之所有方法的 &apos;NotImplemented&apos; 行為</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimEdge.Behavior">
+            <summary>指派填充類型之所有方法的行為</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimEdge.Constructor">
+            <summary>設定 Edge.Edge() 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimEdge.EndGet">
+            <summary>設定 Edge.get_End() 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimEdge.EndSetString">
+            <summary>設定 Edge.set_End(String value) 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimEdge.StartGet">
+            <summary>設定 Edge.get_Start() 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimEdge.StartSetString">
+            <summary>設定 Edge.set_Start(String value) 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimEdge.WeightGet">
+            <summary>設定 Edge.get_Weight() 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimEdge.WeightSetDouble">
+            <summary>設定 Edge.set_Weight(Double value) 的 填充碼</summary>
+        </member>
+        <member name="T:JiebaNet.Analyser.Fakes.ShimEdge.AllInstances">
+            <summary>定義所有執行個體成員的填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimEdge.AllInstances.EndGet">
+            <summary>設定 Edge.get_End() 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimEdge.AllInstances.EndSetString">
+            <summary>設定 Edge.set_End(String value) 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimEdge.AllInstances.StartGet">
+            <summary>設定 Edge.get_Start() 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimEdge.AllInstances.StartSetString">
+            <summary>設定 Edge.set_Start(String value) 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimEdge.AllInstances.WeightGet">
+            <summary>設定 Edge.get_Weight() 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimEdge.AllInstances.WeightSetDouble">
+            <summary>設定 Edge.set_Weight(Double value) 的 填充碼</summary>
+        </member>
+        <member name="T:JiebaNet.Analyser.Fakes.ShimIdfLoader">
+            <summary>JiebaNet.Analyser.IdfLoader 的填充碼類型</summary>
+        </member>
+        <member name="M:JiebaNet.Analyser.Fakes.ShimIdfLoader.#ctor">
+            <summary>初始化新填充碼執行個體</summary>
+        </member>
+        <member name="M:JiebaNet.Analyser.Fakes.ShimIdfLoader.#ctor(JiebaNet.Analyser.IdfLoader)">
+            <summary>初始化指定執行個體的新填充碼</summary>
+        </member>
+        <member name="M:JiebaNet.Analyser.Fakes.ShimIdfLoader.BehaveAsCurrent">
+            <summary>指派填充類型之所有方法的 &apos;Current&apos; 行為</summary>
+        </member>
+        <member name="M:JiebaNet.Analyser.Fakes.ShimIdfLoader.BehaveAsNotImplemented">
+            <summary>指派填充類型之所有方法的 &apos;NotImplemented&apos; 行為</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimIdfLoader.Behavior">
+            <summary>指派填充類型之所有方法的行為</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimIdfLoader.ConstructorString">
+            <summary>設定 IdfLoader.IdfLoader(String idfPath) 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimIdfLoader.IdfFilePathGet">
+            <summary>設定 IdfLoader.get_IdfFilePath() 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimIdfLoader.IdfFilePathSetString">
+            <summary>設定 IdfLoader.set_IdfFilePath(String value) 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimIdfLoader.IdfFreqGet">
+            <summary>設定 IdfLoader.get_IdfFreq() 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimIdfLoader.IdfFreqSetIDictionaryOfStringDouble">
+            <summary>設定 IdfLoader.set_IdfFreq(IDictionary`2&lt;String,Double&gt; value) 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimIdfLoader.MedianIdfGet">
+            <summary>設定 IdfLoader.get_MedianIdf() 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimIdfLoader.MedianIdfSetDouble">
+            <summary>設定 IdfLoader.set_MedianIdf(Double value) 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimIdfLoader.SetNewPathString">
+            <summary>設定 IdfLoader.SetNewPath(String newIdfPath) 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimIdfLoader._SetNewPathb__0Double">
+            <summary>設定 IdfLoader.&lt;SetNewPath&gt;b__0(Double v) 的 填充碼</summary>
+        </member>
+        <member name="T:JiebaNet.Analyser.Fakes.ShimIdfLoader.AllInstances">
+            <summary>定義所有執行個體成員的填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimIdfLoader.AllInstances.IdfFilePathGet">
+            <summary>設定 IdfLoader.get_IdfFilePath() 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimIdfLoader.AllInstances.IdfFilePathSetString">
+            <summary>設定 IdfLoader.set_IdfFilePath(String value) 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimIdfLoader.AllInstances.IdfFreqGet">
+            <summary>設定 IdfLoader.get_IdfFreq() 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimIdfLoader.AllInstances.IdfFreqSetIDictionaryOfStringDouble">
+            <summary>設定 IdfLoader.set_IdfFreq(IDictionary`2&lt;String,Double&gt; value) 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimIdfLoader.AllInstances.MedianIdfGet">
+            <summary>設定 IdfLoader.get_MedianIdf() 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimIdfLoader.AllInstances.MedianIdfSetDouble">
+            <summary>設定 IdfLoader.set_MedianIdf(Double value) 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimIdfLoader.AllInstances.SetNewPathString">
+            <summary>設定 IdfLoader.SetNewPath(String newIdfPath) 的 填充碼</summary>
+        </member>
+        <member name="T:JiebaNet.Analyser.Fakes.ShimKeywordExtractor">
+            <summary>JiebaNet.Analyser.KeywordExtractor 的填充碼類型</summary>
+        </member>
+        <member name="M:JiebaNet.Analyser.Fakes.ShimKeywordExtractor.#ctor(JiebaNet.Analyser.KeywordExtractor)">
+            <summary>初始化指定執行個體的新填充碼</summary>
+        </member>
+        <member name="M:JiebaNet.Analyser.Fakes.ShimKeywordExtractor.BehaveAsCurrent">
+            <summary>指派填充類型之所有方法的 &apos;Current&apos; 行為</summary>
+        </member>
+        <member name="M:JiebaNet.Analyser.Fakes.ShimKeywordExtractor.BehaveAsNotImplemented">
+            <summary>指派填充類型之所有方法的 &apos;NotImplemented&apos; 行為</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimKeywordExtractor.Behavior">
+            <summary>指派填充類型之所有方法的行為</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimKeywordExtractor.Constructor">
+            <summary>設定 KeywordExtractor.KeywordExtractor() 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimKeywordExtractor.SetStopWordsString">
+            <summary>設定 KeywordExtractor.SetStopWords(String stopWordsFile) 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimKeywordExtractor.StaticConstructor">
+            <summary>設定 KeywordExtractor.KeywordExtractor() 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimKeywordExtractor.StopWordsGet">
+            <summary>設定 KeywordExtractor.get_StopWords() 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimKeywordExtractor.StopWordsSetISetOfString">
+            <summary>設定 KeywordExtractor.set_StopWords(ISet`1&lt;String&gt; value) 的 填充碼</summary>
+        </member>
+        <member name="T:JiebaNet.Analyser.Fakes.ShimKeywordExtractor.AllInstances">
+            <summary>定義所有執行個體成員的填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimKeywordExtractor.AllInstances.SetStopWordsString">
+            <summary>設定 KeywordExtractor.SetStopWords(String stopWordsFile) 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimKeywordExtractor.AllInstances.StopWordsGet">
+            <summary>設定 KeywordExtractor.get_StopWords() 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimKeywordExtractor.AllInstances.StopWordsSetISetOfString">
+            <summary>設定 KeywordExtractor.set_StopWords(ISet`1&lt;String&gt; value) 的 填充碼</summary>
+        </member>
+        <member name="T:JiebaNet.Analyser.Fakes.ShimTextRankExtractor">
+            <summary>JiebaNet.Analyser.TextRankExtractor 的填充碼類型</summary>
+        </member>
+        <member name="M:JiebaNet.Analyser.Fakes.ShimTextRankExtractor.#ctor">
+            <summary>初始化新填充碼執行個體</summary>
+        </member>
+        <member name="M:JiebaNet.Analyser.Fakes.ShimTextRankExtractor.#ctor(JiebaNet.Analyser.TextRankExtractor)">
+            <summary>初始化指定執行個體的新填充碼</summary>
+        </member>
+        <member name="M:JiebaNet.Analyser.Fakes.ShimTextRankExtractor.BehaveAsCurrent">
+            <summary>指派填充類型之所有方法的 &apos;Current&apos; 行為</summary>
+        </member>
+        <member name="M:JiebaNet.Analyser.Fakes.ShimTextRankExtractor.BehaveAsNotImplemented">
+            <summary>指派填充類型之所有方法的 &apos;NotImplemented&apos; 行為</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTextRankExtractor.Behavior">
+            <summary>指派填充類型之所有方法的行為</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTextRankExtractor.Constructor">
+            <summary>設定 TextRankExtractor.TextRankExtractor() 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTextRankExtractor.ExtractTagRankStringIEnumerableOfString">
+            <summary>設定 TextRankExtractor.ExtractTagRank(String text, IEnumerable`1&lt;String&gt; allowPos) 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTextRankExtractor.ExtractTagsStringInt32IEnumerableOfString">
+            <summary>設定 TextRankExtractor.ExtractTags(String text, Int32 count, IEnumerable`1&lt;String&gt; allowPos) 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTextRankExtractor.ExtractTagsWithWeightStringInt32IEnumerableOfString">
+            <summary>設定 TextRankExtractor.ExtractTagsWithWeight(String text, Int32 count, IEnumerable`1&lt;String&gt; allowPos) 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTextRankExtractor.PairFilterPair">
+            <summary>設定 TextRankExtractor.PairFilter(Pair wp) 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTextRankExtractor.PosSegmenterGet">
+            <summary>設定 TextRankExtractor.get_PosSegmenter() 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTextRankExtractor.PosSegmenterSetPosSegmenter">
+            <summary>設定 TextRankExtractor.set_PosSegmenter(PosSegmenter value) 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTextRankExtractor.SegmenterGet">
+            <summary>設定 TextRankExtractor.get_Segmenter() 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTextRankExtractor.SegmenterSetJiebaSegmenter">
+            <summary>設定 TextRankExtractor.set_Segmenter(JiebaSegmenter value) 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTextRankExtractor.SpanGet">
+            <summary>設定 TextRankExtractor.get_Span() 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTextRankExtractor.SpanSetInt32">
+            <summary>設定 TextRankExtractor.set_Span(Int32 value) 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTextRankExtractor.StaticConstructor">
+            <summary>設定 TextRankExtractor.TextRankExtractor() 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTextRankExtractor._ExtractTagsWithWeightb__5KeyValuePairOfStringDouble">
+            <summary>設定 TextRankExtractor.&lt;ExtractTagsWithWeight&gt;b__5(KeyValuePair`2&lt;String,Double&gt; p) 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTextRankExtractor._ExtractTagsWithWeightb__6KeyValuePairOfStringDouble">
+            <summary>設定 TextRankExtractor.&lt;ExtractTagsWithWeight&gt;b__6(KeyValuePair`2&lt;String,Double&gt; p) 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTextRankExtractor._ExtractTagsb__0KeyValuePairOfStringDouble">
+            <summary>設定 TextRankExtractor.&lt;ExtractTags&gt;b__0(KeyValuePair`2&lt;String,Double&gt; p) 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTextRankExtractor._ExtractTagsb__1KeyValuePairOfStringDouble">
+            <summary>設定 TextRankExtractor.&lt;ExtractTags&gt;b__1(KeyValuePair`2&lt;String,Double&gt; p) 的 填充碼</summary>
+        </member>
+        <member name="T:JiebaNet.Analyser.Fakes.ShimTextRankExtractor.AllInstances">
+            <summary>定義所有執行個體成員的填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTextRankExtractor.AllInstances.ExtractTagRankStringIEnumerableOfString">
+            <summary>設定 TextRankExtractor.ExtractTagRank(String text, IEnumerable`1&lt;String&gt; allowPos) 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTextRankExtractor.AllInstances.ExtractTagsStringInt32IEnumerableOfString">
+            <summary>設定 TextRankExtractor.ExtractTags(String text, Int32 count, IEnumerable`1&lt;String&gt; allowPos) 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTextRankExtractor.AllInstances.ExtractTagsWithWeightStringInt32IEnumerableOfString">
+            <summary>設定 TextRankExtractor.ExtractTagsWithWeight(String text, Int32 count, IEnumerable`1&lt;String&gt; allowPos) 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTextRankExtractor.AllInstances.PairFilterPair">
+            <summary>設定 TextRankExtractor.PairFilter(Pair wp) 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTextRankExtractor.AllInstances.PosSegmenterGet">
+            <summary>設定 TextRankExtractor.get_PosSegmenter() 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTextRankExtractor.AllInstances.PosSegmenterSetPosSegmenter">
+            <summary>設定 TextRankExtractor.set_PosSegmenter(PosSegmenter value) 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTextRankExtractor.AllInstances.SegmenterGet">
+            <summary>設定 TextRankExtractor.get_Segmenter() 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTextRankExtractor.AllInstances.SegmenterSetJiebaSegmenter">
+            <summary>設定 TextRankExtractor.set_Segmenter(JiebaSegmenter value) 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTextRankExtractor.AllInstances.SpanGet">
+            <summary>設定 TextRankExtractor.get_Span() 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTextRankExtractor.AllInstances.SpanSetInt32">
+            <summary>設定 TextRankExtractor.set_Span(Int32 value) 的 填充碼</summary>
+        </member>
+        <member name="T:JiebaNet.Analyser.Fakes.ShimTfidfExtractor">
+            <summary>JiebaNet.Analyser.TfidfExtractor 的填充碼類型</summary>
+        </member>
+        <member name="M:JiebaNet.Analyser.Fakes.ShimTfidfExtractor.#ctor">
+            <summary>初始化新填充碼執行個體</summary>
+        </member>
+        <member name="M:JiebaNet.Analyser.Fakes.ShimTfidfExtractor.#ctor(JiebaNet.Analyser.TfidfExtractor)">
+            <summary>初始化指定執行個體的新填充碼</summary>
+        </member>
+        <member name="M:JiebaNet.Analyser.Fakes.ShimTfidfExtractor.BehaveAsCurrent">
+            <summary>指派填充類型之所有方法的 &apos;Current&apos; 行為</summary>
+        </member>
+        <member name="M:JiebaNet.Analyser.Fakes.ShimTfidfExtractor.BehaveAsNotImplemented">
+            <summary>指派填充類型之所有方法的 &apos;NotImplemented&apos; 行為</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTfidfExtractor.Behavior">
+            <summary>指派填充類型之所有方法的行為</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTfidfExtractor.Constructor">
+            <summary>設定 TfidfExtractor.TfidfExtractor() 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTfidfExtractor.ExtractTagsStringInt32IEnumerableOfString">
+            <summary>設定 TfidfExtractor.ExtractTags(String text, Int32 count, IEnumerable`1&lt;String&gt; allowPos) 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTfidfExtractor.ExtractTagsWithWeightStringInt32IEnumerableOfString">
+            <summary>設定 TfidfExtractor.ExtractTagsWithWeight(String text, Int32 count, IEnumerable`1&lt;String&gt; allowPos) 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTfidfExtractor.FilterCutByPosStringIEnumerableOfString">
+            <summary>設定 TfidfExtractor.FilterCutByPos(String text, IEnumerable`1&lt;String&gt; allowPos) 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTfidfExtractor.GetWordIfidfStringIEnumerableOfString">
+            <summary>設定 TfidfExtractor.GetWordIfidf(String text, IEnumerable`1&lt;String&gt; allowPos) 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTfidfExtractor.IdfFreqGet">
+            <summary>設定 TfidfExtractor.get_IdfFreq() 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTfidfExtractor.IdfFreqSetIDictionaryOfStringDouble">
+            <summary>設定 TfidfExtractor.set_IdfFreq(IDictionary`2&lt;String,Double&gt; value) 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTfidfExtractor.LoaderGet">
+            <summary>設定 TfidfExtractor.get_Loader() 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTfidfExtractor.LoaderSetIdfLoader">
+            <summary>設定 TfidfExtractor.set_Loader(IdfLoader value) 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTfidfExtractor.MedianIdfGet">
+            <summary>設定 TfidfExtractor.get_MedianIdf() 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTfidfExtractor.MedianIdfSetDouble">
+            <summary>設定 TfidfExtractor.set_MedianIdf(Double value) 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTfidfExtractor.PosSegmenterGet">
+            <summary>設定 TfidfExtractor.get_PosSegmenter() 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTfidfExtractor.PosSegmenterSetPosSegmenter">
+            <summary>設定 TfidfExtractor.set_PosSegmenter(PosSegmenter value) 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTfidfExtractor.SegmenterGet">
+            <summary>設定 TfidfExtractor.get_Segmenter() 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTfidfExtractor.SegmenterSetJiebaSegmenter">
+            <summary>設定 TfidfExtractor.set_Segmenter(JiebaSegmenter value) 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTfidfExtractor.SetIdfPathString">
+            <summary>設定 TfidfExtractor.SetIdfPath(String idfPath) 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTfidfExtractor.StaticConstructor">
+            <summary>設定 TfidfExtractor.TfidfExtractor() 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTfidfExtractor._ExtractTagsWithWeightb__aKeyValuePairOfStringDouble">
+            <summary>設定 TfidfExtractor.&lt;ExtractTagsWithWeight&gt;b__a(KeyValuePair`2&lt;String,Double&gt; p) 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTfidfExtractor._ExtractTagsWithWeightb__bKeyValuePairOfStringDouble">
+            <summary>設定 TfidfExtractor.&lt;ExtractTagsWithWeight&gt;b__b(KeyValuePair`2&lt;String,Double&gt; p) 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTfidfExtractor._ExtractTagsb__5KeyValuePairOfStringDouble">
+            <summary>設定 TfidfExtractor.&lt;ExtractTags&gt;b__5(KeyValuePair`2&lt;String,Double&gt; p) 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTfidfExtractor._ExtractTagsb__6KeyValuePairOfStringDouble">
+            <summary>設定 TfidfExtractor.&lt;ExtractTags&gt;b__6(KeyValuePair`2&lt;String,Double&gt; p) 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTfidfExtractor._FilterCutByPosb__1Pair">
+            <summary>設定 TfidfExtractor.&lt;FilterCutByPos&gt;b__1(Pair p) 的 填充碼</summary>
+        </member>
+        <member name="T:JiebaNet.Analyser.Fakes.ShimTfidfExtractor.AllInstances">
+            <summary>定義所有執行個體成員的填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTfidfExtractor.AllInstances.ExtractTagsStringInt32IEnumerableOfString">
+            <summary>設定 TfidfExtractor.ExtractTags(String text, Int32 count, IEnumerable`1&lt;String&gt; allowPos) 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTfidfExtractor.AllInstances.ExtractTagsWithWeightStringInt32IEnumerableOfString">
+            <summary>設定 TfidfExtractor.ExtractTagsWithWeight(String text, Int32 count, IEnumerable`1&lt;String&gt; allowPos) 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTfidfExtractor.AllInstances.FilterCutByPosStringIEnumerableOfString">
+            <summary>設定 TfidfExtractor.FilterCutByPos(String text, IEnumerable`1&lt;String&gt; allowPos) 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTfidfExtractor.AllInstances.GetWordIfidfStringIEnumerableOfString">
+            <summary>設定 TfidfExtractor.GetWordIfidf(String text, IEnumerable`1&lt;String&gt; allowPos) 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTfidfExtractor.AllInstances.IdfFreqGet">
+            <summary>設定 TfidfExtractor.get_IdfFreq() 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTfidfExtractor.AllInstances.IdfFreqSetIDictionaryOfStringDouble">
+            <summary>設定 TfidfExtractor.set_IdfFreq(IDictionary`2&lt;String,Double&gt; value) 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTfidfExtractor.AllInstances.LoaderGet">
+            <summary>設定 TfidfExtractor.get_Loader() 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTfidfExtractor.AllInstances.LoaderSetIdfLoader">
+            <summary>設定 TfidfExtractor.set_Loader(IdfLoader value) 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTfidfExtractor.AllInstances.MedianIdfGet">
+            <summary>設定 TfidfExtractor.get_MedianIdf() 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTfidfExtractor.AllInstances.MedianIdfSetDouble">
+            <summary>設定 TfidfExtractor.set_MedianIdf(Double value) 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTfidfExtractor.AllInstances.PosSegmenterGet">
+            <summary>設定 TfidfExtractor.get_PosSegmenter() 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTfidfExtractor.AllInstances.PosSegmenterSetPosSegmenter">
+            <summary>設定 TfidfExtractor.set_PosSegmenter(PosSegmenter value) 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTfidfExtractor.AllInstances.SegmenterGet">
+            <summary>設定 TfidfExtractor.get_Segmenter() 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTfidfExtractor.AllInstances.SegmenterSetJiebaSegmenter">
+            <summary>設定 TfidfExtractor.set_Segmenter(JiebaSegmenter value) 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimTfidfExtractor.AllInstances.SetIdfPathString">
+            <summary>設定 TfidfExtractor.SetIdfPath(String idfPath) 的 填充碼</summary>
+        </member>
+        <member name="T:JiebaNet.Analyser.Fakes.ShimUndirectWeightedGraph">
+            <summary>JiebaNet.Analyser.UndirectWeightedGraph 的填充碼類型</summary>
+        </member>
+        <member name="M:JiebaNet.Analyser.Fakes.ShimUndirectWeightedGraph.#ctor">
+            <summary>初始化新填充碼執行個體</summary>
+        </member>
+        <member name="M:JiebaNet.Analyser.Fakes.ShimUndirectWeightedGraph.#ctor(JiebaNet.Analyser.UndirectWeightedGraph)">
+            <summary>初始化指定執行個體的新填充碼</summary>
+        </member>
+        <member name="M:JiebaNet.Analyser.Fakes.ShimUndirectWeightedGraph.BehaveAsCurrent">
+            <summary>指派填充類型之所有方法的 &apos;Current&apos; 行為</summary>
+        </member>
+        <member name="M:JiebaNet.Analyser.Fakes.ShimUndirectWeightedGraph.BehaveAsNotImplemented">
+            <summary>指派填充類型之所有方法的 &apos;NotImplemented&apos; 行為</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimUndirectWeightedGraph.AddEdgeStringStringDouble">
+            <summary>設定 UndirectWeightedGraph.AddEdge(String start, String end, Double weight) 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimUndirectWeightedGraph.Behavior">
+            <summary>指派填充類型之所有方法的行為</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimUndirectWeightedGraph.Constructor">
+            <summary>設定 UndirectWeightedGraph.UndirectWeightedGraph() 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimUndirectWeightedGraph.GraphGet">
+            <summary>設定 UndirectWeightedGraph.get_Graph() 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimUndirectWeightedGraph.GraphSetIDictionaryOfStringListOfEdge">
+            <summary>設定 UndirectWeightedGraph.set_Graph(IDictionary`2&lt;String,List`1&lt;Edge&gt;&gt; value) 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimUndirectWeightedGraph.Rank">
+            <summary>設定 UndirectWeightedGraph.Rank() 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimUndirectWeightedGraph.StaticConstructor">
+            <summary>設定 UndirectWeightedGraph.UndirectWeightedGraph() 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimUndirectWeightedGraph._Rankb__2Edge">
+            <summary>設定 UndirectWeightedGraph.&lt;Rank&gt;b__2(Edge e) 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimUndirectWeightedGraph._Rankb__3String">
+            <summary>設定 UndirectWeightedGraph.&lt;Rank&gt;b__3(String k) 的 填充碼</summary>
+        </member>
+        <member name="T:JiebaNet.Analyser.Fakes.ShimUndirectWeightedGraph.AllInstances">
+            <summary>定義所有執行個體成員的填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimUndirectWeightedGraph.AllInstances.AddEdgeStringStringDouble">
+            <summary>設定 UndirectWeightedGraph.AddEdge(String start, String end, Double weight) 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimUndirectWeightedGraph.AllInstances.GraphGet">
+            <summary>設定 UndirectWeightedGraph.get_Graph() 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimUndirectWeightedGraph.AllInstances.GraphSetIDictionaryOfStringListOfEdge">
+            <summary>設定 UndirectWeightedGraph.set_Graph(IDictionary`2&lt;String,List`1&lt;Edge&gt;&gt; value) 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimUndirectWeightedGraph.AllInstances.Rank">
+            <summary>設定 UndirectWeightedGraph.Rank() 的 填充碼</summary>
+        </member>
+        <member name="T:JiebaNet.Analyser.Fakes.ShimWordWeightPair">
+            <summary>JiebaNet.Analyser.WordWeightPair 的填充碼類型</summary>
+        </member>
+        <member name="M:JiebaNet.Analyser.Fakes.ShimWordWeightPair.#ctor">
+            <summary>初始化新填充碼執行個體</summary>
+        </member>
+        <member name="M:JiebaNet.Analyser.Fakes.ShimWordWeightPair.#ctor(JiebaNet.Analyser.WordWeightPair)">
+            <summary>初始化指定執行個體的新填充碼</summary>
+        </member>
+        <member name="M:JiebaNet.Analyser.Fakes.ShimWordWeightPair.BehaveAsCurrent">
+            <summary>指派填充類型之所有方法的 &apos;Current&apos; 行為</summary>
+        </member>
+        <member name="M:JiebaNet.Analyser.Fakes.ShimWordWeightPair.BehaveAsNotImplemented">
+            <summary>指派填充類型之所有方法的 &apos;NotImplemented&apos; 行為</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimWordWeightPair.Behavior">
+            <summary>指派填充類型之所有方法的行為</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimWordWeightPair.Constructor">
+            <summary>設定 WordWeightPair.WordWeightPair() 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimWordWeightPair.WeightGet">
+            <summary>設定 WordWeightPair.get_Weight() 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimWordWeightPair.WeightSetDouble">
+            <summary>設定 WordWeightPair.set_Weight(Double value) 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimWordWeightPair.WordGet">
+            <summary>設定 WordWeightPair.get_Word() 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimWordWeightPair.WordSetString">
+            <summary>設定 WordWeightPair.set_Word(String value) 的 填充碼</summary>
+        </member>
+        <member name="T:JiebaNet.Analyser.Fakes.ShimWordWeightPair.AllInstances">
+            <summary>定義所有執行個體成員的填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimWordWeightPair.AllInstances.WeightGet">
+            <summary>設定 WordWeightPair.get_Weight() 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimWordWeightPair.AllInstances.WeightSetDouble">
+            <summary>設定 WordWeightPair.set_Weight(Double value) 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimWordWeightPair.AllInstances.WordGet">
+            <summary>設定 WordWeightPair.get_Word() 的 填充碼</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.ShimWordWeightPair.AllInstances.WordSetString">
+            <summary>設定 WordWeightPair.set_Word(String value) 的 填充碼</summary>
+        </member>
+        <member name="T:JiebaNet.Analyser.Fakes.StubConfigManager">
+            <summary>JiebaNet.Analyser.ConfigManager 的 stub 類型</summary>
+        </member>
+        <member name="M:JiebaNet.Analyser.Fakes.StubConfigManager.#ctor">
+            <summary>初始化新的執行個體</summary>
+        </member>
+        <member name="M:JiebaNet.Analyser.Fakes.StubConfigManager.InitializeStub">
+            <summary>初始化 type StubConfigManager 的新執行個體</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.StubConfigManager.CallBase">
+            <summary>取得或設定值，此值表示是否應呼叫基底方法，而不採取後援行為</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.StubConfigManager.InstanceBehavior">
+            <summary>取得或設定執行個體行為。</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.StubConfigManager.InstanceObserver">
+            <summary>取得或設定執行個體觀察者。</summary>
+        </member>
+        <member name="T:JiebaNet.Analyser.Fakes.StubEdge">
+            <summary>JiebaNet.Analyser.Edge 的 stub 類型</summary>
+        </member>
+        <member name="M:JiebaNet.Analyser.Fakes.StubEdge.#ctor">
+            <summary>初始化新的執行個體</summary>
+        </member>
+        <member name="M:JiebaNet.Analyser.Fakes.StubEdge.InitializeStub">
+            <summary>初始化 type StubEdge 的新執行個體</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.StubEdge.CallBase">
+            <summary>取得或設定值，此值表示是否應呼叫基底方法，而不採取後援行為</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.StubEdge.InstanceBehavior">
+            <summary>取得或設定執行個體行為。</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.StubEdge.InstanceObserver">
+            <summary>取得或設定執行個體觀察者。</summary>
+        </member>
+        <member name="T:JiebaNet.Analyser.Fakes.StubIdfLoader">
+            <summary>JiebaNet.Analyser.IdfLoader 的 stub 類型</summary>
+        </member>
+        <member name="M:JiebaNet.Analyser.Fakes.StubIdfLoader.#ctor(System.String)">
+            <summary>初始化新的執行個體</summary>
+        </member>
+        <member name="M:JiebaNet.Analyser.Fakes.StubIdfLoader.InitializeStub">
+            <summary>初始化 type StubIdfLoader 的新執行個體</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.StubIdfLoader.CallBase">
+            <summary>取得或設定值，此值表示是否應呼叫基底方法，而不採取後援行為</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.StubIdfLoader.InstanceBehavior">
+            <summary>取得或設定執行個體行為。</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.StubIdfLoader.InstanceObserver">
+            <summary>取得或設定執行個體觀察者。</summary>
+        </member>
+        <member name="T:JiebaNet.Analyser.Fakes.StubKeywordExtractor">
+            <summary>JiebaNet.Analyser.KeywordExtractor 的 stub 類型</summary>
+        </member>
+        <member name="M:JiebaNet.Analyser.Fakes.StubKeywordExtractor.#ctor">
+            <summary>初始化新的執行個體</summary>
+        </member>
+        <member name="M:JiebaNet.Analyser.Fakes.StubKeywordExtractor.AttachBackingFieldToStopWords">
+            <summary>附加委派以便將 StubKeywordExtractor.StopWords 模擬為含有支援欄位的屬性。</summary>
+        </member>
+        <member name="M:JiebaNet.Analyser.Fakes.StubKeywordExtractor.ExtractTags(System.String,System.Int32,System.Collections.Generic.IEnumerable{System.String})">
+            <summary>設定 KeywordExtractor.ExtractTags(String text, Int32 count, IEnumerable`1&lt;String&gt; allowPos) 的 stub</summary>
+        </member>
+        <member name="F:JiebaNet.Analyser.Fakes.StubKeywordExtractor.ExtractTagsStringInt32IEnumerableOfString">
+            <summary>設定 KeywordExtractor.ExtractTags(String text, Int32 count, IEnumerable`1&lt;String&gt; allowPos) 的 stub</summary>
+        </member>
+        <member name="M:JiebaNet.Analyser.Fakes.StubKeywordExtractor.ExtractTagsWithWeight(System.String,System.Int32,System.Collections.Generic.IEnumerable{System.String})">
+            <summary>設定 KeywordExtractor.ExtractTagsWithWeight(String text, Int32 count, IEnumerable`1&lt;String&gt; allowPos) 的 stub</summary>
+        </member>
+        <member name="F:JiebaNet.Analyser.Fakes.StubKeywordExtractor.ExtractTagsWithWeightStringInt32IEnumerableOfString">
+            <summary>設定 KeywordExtractor.ExtractTagsWithWeight(String text, Int32 count, IEnumerable`1&lt;String&gt; allowPos) 的 stub</summary>
+        </member>
+        <member name="M:JiebaNet.Analyser.Fakes.StubKeywordExtractor.InitializeStub">
+            <summary>初始化 type StubKeywordExtractor 的新執行個體</summary>
+        </member>
+        <member name="F:JiebaNet.Analyser.Fakes.StubKeywordExtractor.StopWordsGet">
+            <summary>設定 KeywordExtractor.get_StopWords() 的 stub</summary>
+        </member>
+        <member name="F:JiebaNet.Analyser.Fakes.StubKeywordExtractor.StopWordsSetISetOfString">
+            <summary>設定 KeywordExtractor.set_StopWords(ISet`1&lt;String&gt; value) 的 stub</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.StubKeywordExtractor.CallBase">
+            <summary>取得或設定值，此值表示是否應呼叫基底方法，而不採取後援行為</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.StubKeywordExtractor.InstanceBehavior">
+            <summary>取得或設定執行個體行為。</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.StubKeywordExtractor.InstanceObserver">
+            <summary>取得或設定執行個體觀察者。</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.StubKeywordExtractor.StopWords">
+            <summary>設定 KeywordExtractor.get_StopWords() 的 stub</summary>
+        </member>
+        <member name="T:JiebaNet.Analyser.Fakes.StubTextRankExtractor">
+            <summary>JiebaNet.Analyser.TextRankExtractor 的 stub 類型</summary>
+        </member>
+        <member name="M:JiebaNet.Analyser.Fakes.StubTextRankExtractor.#ctor">
+            <summary>初始化新的執行個體</summary>
+        </member>
+        <member name="M:JiebaNet.Analyser.Fakes.StubTextRankExtractor.AttachBackingFieldToStopWords">
+            <summary>附加委派以便將 StubTextRankExtractor.StopWords 模擬為含有支援欄位的屬性。</summary>
+        </member>
+        <member name="M:JiebaNet.Analyser.Fakes.StubTextRankExtractor.ExtractTags(System.String,System.Int32,System.Collections.Generic.IEnumerable{System.String})">
+            <summary>設定 TextRankExtractor.ExtractTags(String text, Int32 count, IEnumerable`1&lt;String&gt; allowPos) 的 stub</summary>
+        </member>
+        <member name="F:JiebaNet.Analyser.Fakes.StubTextRankExtractor.ExtractTagsStringInt32IEnumerableOfString">
+            <summary>設定 TextRankExtractor.ExtractTags(String text, Int32 count, IEnumerable`1&lt;String&gt; allowPos) 的 stub</summary>
+        </member>
+        <member name="M:JiebaNet.Analyser.Fakes.StubTextRankExtractor.ExtractTagsWithWeight(System.String,System.Int32,System.Collections.Generic.IEnumerable{System.String})">
+            <summary>設定 TextRankExtractor.ExtractTagsWithWeight(String text, Int32 count, IEnumerable`1&lt;String&gt; allowPos) 的 stub</summary>
+        </member>
+        <member name="F:JiebaNet.Analyser.Fakes.StubTextRankExtractor.ExtractTagsWithWeightStringInt32IEnumerableOfString">
+            <summary>設定 TextRankExtractor.ExtractTagsWithWeight(String text, Int32 count, IEnumerable`1&lt;String&gt; allowPos) 的 stub</summary>
+        </member>
+        <member name="M:JiebaNet.Analyser.Fakes.StubTextRankExtractor.InitializeStub">
+            <summary>初始化 type StubTextRankExtractor 的新執行個體</summary>
+        </member>
+        <member name="F:JiebaNet.Analyser.Fakes.StubTextRankExtractor.StopWordsGet">
+            <summary>設定 KeywordExtractor.get_StopWords() 的 stub</summary>
+        </member>
+        <member name="F:JiebaNet.Analyser.Fakes.StubTextRankExtractor.StopWordsSetISetOfString">
+            <summary>設定 KeywordExtractor.set_StopWords(ISet`1&lt;String&gt; value) 的 stub</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.StubTextRankExtractor.CallBase">
+            <summary>取得或設定值，此值表示是否應呼叫基底方法，而不採取後援行為</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.StubTextRankExtractor.InstanceBehavior">
+            <summary>取得或設定執行個體行為。</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.StubTextRankExtractor.InstanceObserver">
+            <summary>取得或設定執行個體觀察者。</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.StubTextRankExtractor.StopWords">
+            <summary>設定 KeywordExtractor.get_StopWords() 的 stub</summary>
+        </member>
+        <member name="T:JiebaNet.Analyser.Fakes.StubTfidfExtractor">
+            <summary>JiebaNet.Analyser.TfidfExtractor 的 stub 類型</summary>
+        </member>
+        <member name="M:JiebaNet.Analyser.Fakes.StubTfidfExtractor.#ctor">
+            <summary>初始化新的執行個體</summary>
+        </member>
+        <member name="M:JiebaNet.Analyser.Fakes.StubTfidfExtractor.AttachBackingFieldToStopWords">
+            <summary>附加委派以便將 StubTfidfExtractor.StopWords 模擬為含有支援欄位的屬性。</summary>
+        </member>
+        <member name="M:JiebaNet.Analyser.Fakes.StubTfidfExtractor.ExtractTags(System.String,System.Int32,System.Collections.Generic.IEnumerable{System.String})">
+            <summary>設定 TfidfExtractor.ExtractTags(String text, Int32 count, IEnumerable`1&lt;String&gt; allowPos) 的 stub</summary>
+        </member>
+        <member name="F:JiebaNet.Analyser.Fakes.StubTfidfExtractor.ExtractTagsStringInt32IEnumerableOfString">
+            <summary>設定 TfidfExtractor.ExtractTags(String text, Int32 count, IEnumerable`1&lt;String&gt; allowPos) 的 stub</summary>
+        </member>
+        <member name="M:JiebaNet.Analyser.Fakes.StubTfidfExtractor.ExtractTagsWithWeight(System.String,System.Int32,System.Collections.Generic.IEnumerable{System.String})">
+            <summary>設定 TfidfExtractor.ExtractTagsWithWeight(String text, Int32 count, IEnumerable`1&lt;String&gt; allowPos) 的 stub</summary>
+        </member>
+        <member name="F:JiebaNet.Analyser.Fakes.StubTfidfExtractor.ExtractTagsWithWeightStringInt32IEnumerableOfString">
+            <summary>設定 TfidfExtractor.ExtractTagsWithWeight(String text, Int32 count, IEnumerable`1&lt;String&gt; allowPos) 的 stub</summary>
+        </member>
+        <member name="M:JiebaNet.Analyser.Fakes.StubTfidfExtractor.InitializeStub">
+            <summary>初始化 type StubTfidfExtractor 的新執行個體</summary>
+        </member>
+        <member name="F:JiebaNet.Analyser.Fakes.StubTfidfExtractor.StopWordsGet">
+            <summary>設定 KeywordExtractor.get_StopWords() 的 stub</summary>
+        </member>
+        <member name="F:JiebaNet.Analyser.Fakes.StubTfidfExtractor.StopWordsSetISetOfString">
+            <summary>設定 KeywordExtractor.set_StopWords(ISet`1&lt;String&gt; value) 的 stub</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.StubTfidfExtractor.CallBase">
+            <summary>取得或設定值，此值表示是否應呼叫基底方法，而不採取後援行為</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.StubTfidfExtractor.InstanceBehavior">
+            <summary>取得或設定執行個體行為。</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.StubTfidfExtractor.InstanceObserver">
+            <summary>取得或設定執行個體觀察者。</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.StubTfidfExtractor.StopWords">
+            <summary>設定 KeywordExtractor.get_StopWords() 的 stub</summary>
+        </member>
+        <member name="T:JiebaNet.Analyser.Fakes.StubUndirectWeightedGraph">
+            <summary>JiebaNet.Analyser.UndirectWeightedGraph 的 stub 類型</summary>
+        </member>
+        <member name="M:JiebaNet.Analyser.Fakes.StubUndirectWeightedGraph.#ctor">
+            <summary>初始化新的執行個體</summary>
+        </member>
+        <member name="M:JiebaNet.Analyser.Fakes.StubUndirectWeightedGraph.InitializeStub">
+            <summary>初始化 type StubUndirectWeightedGraph 的新執行個體</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.StubUndirectWeightedGraph.CallBase">
+            <summary>取得或設定值，此值表示是否應呼叫基底方法，而不採取後援行為</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.StubUndirectWeightedGraph.InstanceBehavior">
+            <summary>取得或設定執行個體行為。</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.StubUndirectWeightedGraph.InstanceObserver">
+            <summary>取得或設定執行個體觀察者。</summary>
+        </member>
+        <member name="T:JiebaNet.Analyser.Fakes.StubWordWeightPair">
+            <summary>JiebaNet.Analyser.WordWeightPair 的 stub 類型</summary>
+        </member>
+        <member name="M:JiebaNet.Analyser.Fakes.StubWordWeightPair.#ctor">
+            <summary>初始化新的執行個體</summary>
+        </member>
+        <member name="M:JiebaNet.Analyser.Fakes.StubWordWeightPair.InitializeStub">
+            <summary>初始化 type StubWordWeightPair 的新執行個體</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.StubWordWeightPair.CallBase">
+            <summary>取得或設定值，此值表示是否應呼叫基底方法，而不採取後援行為</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.StubWordWeightPair.InstanceBehavior">
+            <summary>取得或設定執行個體行為。</summary>
+        </member>
+        <member name="P:JiebaNet.Analyser.Fakes.StubWordWeightPair.InstanceObserver">
+            <summary>取得或設定執行個體觀察者。</summary>
+        </member>
+    </members>
+</doc>

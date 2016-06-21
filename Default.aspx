@@ -10,7 +10,7 @@
     <form id="form1" runat="server">
         <div>
             <asp:Label ID="Label1" runat="server" Text=""></asp:Label><br />
-            <asp:Button ID="Button1" runat="server" Text="切切切" OnClick="Button1_Click" /><br />
+            <asp:Button ID="Button1" runat="server" Text="切切切" OnClick="Button1_Click" /><br /><br/><br/>
             <asp:Label ID="Label2" runat="server" Text=""></asp:Label><br />
             <asp:ListView runat="server" ID="ListView_result">
                 <ItemTemplate>

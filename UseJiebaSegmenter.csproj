@@ -41,17 +41,16 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="JiebaNet.Analyser, Version=0.37.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\jieba.NET.0.38\lib\net45\JiebaNet.Analyser.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="JiebaNet.Analyser">
+      <HintPath>..\Solution1\packages\jieba.NET.0.38\lib\net45\JiebaNet.Analyser.dll</HintPath>
     </Reference>
-    <Reference Include="JiebaNet.Segmenter, Version=0.38.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\jieba.NET.0.38\lib\net45\JiebaNet.Segmenter.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="JiebaNet.Segmenter">
+      <HintPath>..\Solution1\packages\jieba.NET.0.38\lib\net45\JiebaNet.Segmenter.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.8.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
-      <Private>True</Private>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Solution1\packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
