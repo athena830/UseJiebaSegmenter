@@ -19,8 +19,9 @@ namespace UseJiebaSegmenter
         /// <param name="type">1: RSS; 2: FB</param>
         /// </summary>
         /// <returns>斷字結果</returns>
-        public static string onStart(int type)
+        public static List<Data> onStart(int type)
         {
+            getFilterKey();
             if (type == 1)
             {
 
@@ -30,6 +31,44 @@ namespace UseJiebaSegmenter
                 return RunFB();
             }
             return null;
+        }
+
+        public static Dictionary<string, int> FilterPoints;
+        public static Dictionary<int, string> FilterKeys;
+        /// <summary>
+        /// 讀取過濾關鍵字
+        /// </summary>
+        public static void getFilterKey()
+        {
+            var cmd = new SqlCommand();
+            cmd.CommandText = @"
+                select * from Keyword
+            ";
+            DataTable rssFilter = Persister.Execute(cmd);
+
+            FilterPoints = new Dictionary<string, int>();
+            FilterKeys = new Dictionary<int, string>();
+
+            foreach (DataRow keyRow in rssFilter.Rows)
+            {
+                FilterPoints.Add(keyRow["KW_Keyword"].ToString(), Int32.Parse(keyRow["KW_Point"].ToString()));
+                FilterKeys.Add(Int32.Parse(keyRow["KW_ID"].ToString()), keyRow["KW_Keyword"].ToString());
+            }
+        }
+
+        /// <summary>
+        /// 檢查  斷字是否在過濾清單中
+        /// </summary>
+        /// <returns></returns>
+        public static int matchTitle(string message)
+        {
+            foreach (string aStr in FilterPoints.Keys)
+            {
+
+                if (message.IndexOf(aStr) >= 0)
+                    return FilterPoints[aStr];
+            }
+            return -1;
         }
 
         #region RSS處理
@@ -57,21 +96,22 @@ namespace UseJiebaSegmenter
         /// 執行斷詞
         /// </summary>
         /// <returns>斷字結果</returns>
-        private static string RunFB()
+        private static List<Data> RunFB()
         {
             DataTable FBtable = getFBMessages();
             //var segmenter = new JiebaSegmenter();
             var posSeg = new PosSegmenter();
-            //List<Data> list = new List<Data>();
-            Dictionary<string, int> Words = new Dictionary<string, int>();
+            List<Data> list = new List<Data>();
             for (int i = 0; i < FBtable.Rows.Count; i++)
             {
+                Dictionary<string, int> Words = new Dictionary<string, int>();
                 var s = FBtable.Rows[i][0].ToString();
                 //var tokens = segmenter.Cut(s);
                 var tokens = posSeg.Cut(s);
-                //Data data = new Data();
-                //data.Number = i + 1;
-                //data.Sentence = s;
+                Data data = new Data();
+                data.ID = FBtable.Rows[i][1].ToString();
+                data.Number = i + 1;
+                data.Sentence = s;
                 //data.Sentence = string.Join("/ ", tokens);
                 //data.Sentence = string.Join(" ", tokens
                     //.Where(token => token.Flag == "ns" || token.Flag == "nr"
@@ -87,25 +127,36 @@ namespace UseJiebaSegmenter
                     //);
                 var tokenList = tokens.Where(token => token.Flag == "ns" || token.Flag == "nr"
                         || token.Flag == "nz" || token.Flag == "n" || token.Flag == "v").ToList();
+                int score = 0;
                 for (int w = 0; w < tokenList.Count; w++)
                 {
-                    string word = tokenList[w].ToString();
-                    if (Words.ContainsKey(word))
+                    string word = tokenList[w].Word.ToString();
+                    int points=matchTitle(word);
+                    if (points > -1)
                     {
-                        Words[word] += 1;
+                        score += points;
+                        var key = word + "," + points;
+                        if (Words.ContainsKey(key))
+                        {
+                            Words[key] += 1;
+                        }
+                        else
+                        {
+                            Words.Add(key, 1);
+                        }
                     }
-                    else
-                    {
-                        Words.Add(word, 1);
-                    }
-                }
 
-                //data.Memo = JsonConvert.SerializeObject(Words, Formatting.Indented);
-                //list.Add(data);
+                }
+                var dicSort = from objDic in Words orderby objDic.Value descending select objDic;
+
+                data.Memo = JsonConvert.SerializeObject(Words, Formatting.Indented);
+                data.Memo += "<br/>原：" +FilterKeys[Int32.Parse(FBtable.Rows[i][2].ToString())].ToString();
+                data.Score = score;
+                list.Add(data);
             }
-            //return list;
-            var dicSort = from objDic in Words orderby objDic.Value descending select objDic;
-            return JsonConvert.SerializeObject(Words, Formatting.Indented);
+            return list;
+            //var dicSort = from objDic in Words orderby objDic.Value descending select objDic;
+            //return JsonConvert.SerializeObject(Words, Formatting.Indented);
         }
 
         /// <summary>
@@ -116,7 +167,7 @@ namespace UseJiebaSegmenter
         {
             var cmd = new SqlCommand();
             cmd.CommandText = @"
-                select top 100 Message from FB_message where KWID>-1
+                select top 10 Message, id, KWID from FB_message where KWID>-1 and FB_ChkDate is null
             ";
             DataTable dt = Persister.Execute(cmd);
 
@@ -126,11 +177,34 @@ namespace UseJiebaSegmenter
                 return null;
         }
 
-        //public class Data 
-        //{
-        //    public int Number { get; set; }
-        //    public string Sentence { get; set; }
-        //}
+        /// <summary>
+        /// 更新FB_message
+        /// </summary>
+        /// <param name="permission">Yes: 1, No: 2</param>
+        /// <param name="score"></param>
+        /// <param name="id"></param>
+        /// <returns>Message</returns>
+        public static void updFBMessages(int score, int permission, string id)
+        {
+            var cmd = new SqlCommand();
+            cmd.CommandText = @"
+                update FB_message set FB_Score=@score, FB_Yesorno=@permission, FB_ChkDate=getDate()
+                    where id=@id
+            ";
+            cmd.Parameters.Add("@score", SqlDbType.Int).Value = score;
+            cmd.Parameters.Add("@permission", SqlDbType.Int).Value = permission;
+            cmd.Parameters.Add("@id", SqlDbType.NVarChar).Value = id;
+            Persister.ExecuteNonQuery(cmd);
+        }
+
+        public class Data
+        {
+            public string ID { get; set; }
+            public int Number { get; set; }
+            public string Sentence { get; set; }
+            public string Memo { get; set; }
+            public int Score { get; set; }
+        }
         #endregion
     }
 }
