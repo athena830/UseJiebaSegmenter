@@ -1,0 +1,104 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="UseJiebaSegmenter.Master" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="vendor/bootstrap-3.3.6-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link href="vendor/css/layout.css" rel="stylesheet" />
+    <link href="vendor/css/normalize.css" rel="stylesheet" />
+    <link href="vendor/css/page.css" rel="stylesheet" />
+    <link href="vendor/css/generic_class.css" rel="stylesheet" />
+    <link href="vendor/css/hover-min.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="Head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div class="container">
+                <div class="accesskey"><a href="#" accesskey="U" title="上方功能區">:::</a></div>
+                <div class="platform_tab tabbed round">
+                    <%--<ul class="reset">
+                        <li class="active"><a href="index.aspx"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;首頁</a></li>
+                        <li><a href="../Schools/index.aspx"><i class="fa fa-building" aria-hidden="true"></i>&nbsp;防災校園專區</a></li>
+                        <li><a href="../Events/index.aspx"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;活動交流專區</a></li>
+                    </ul>--%>
+                </div>
+                <!-- /.platform_tab -->
+                <div class="header radius_AB_10">
+                    <%--<h2 class="reset logo radius_AB_10"><a href="index.aspx">防減災及氣候變遷調適教育數位學習推廣平台</a></h2>
+                    <ul class="reset secondary_nav font_size_12">
+                        <li><a href="newsletter.html">電子報</a></li>
+                        <li><a href="download.html">下載專區</a></li>
+                        <li><a href="faq.html"><i class="fa fa-question-circle" aria-hidden="true"></i>&nbsp;常見問題</a></li>
+                        <li><a href="links.html">相關連結</a></li>
+                        <li><a href="sitemap.html"><i class="fa fa-sitemap" aria-hidden="true"></i>&nbsp;網站導覽</a></li>
+                    </ul>--%>
+                </div>
+                <!-- /.header -->
+                <nav>
+                    <ul>
+                        <li <%=Request.Url.OriginalString.ToLower().Contains("fb") ? "class='active'" : ""%>><a href="FB_List.aspx">Facebook 社群媒體</a></li><li <%=Request.Url.OriginalString.ToLower().Contains("rss") ? "class='active'" : ""%>><a href="RSS_List.aspx">RSS 新聞媒體</a></li><li <%=Request.Url.OriginalString.ToLower().Contains("calculate") ? "class='active'" : ""%>><a href="Calculate.aspx">計算分數</a></li>
+                    </ul>
+                </nav>
+                <!-- /nav -->
+                <div class="content">
+                    <div class="accesskey"><a href="#" accesskey="C" title="主要內容區">:::</a></div>
+                    <div class="login_logout">
+                        <%--Hi~逢甲大學 <a href="login.html"><i class="fa fa-unlock-alt" aria-hidden="true"></i>&nbsp;登出</a>--%>
+                    </div>
+
+                    <div class="page">
+                        <div class="path">
+                            <%--<a href="index.html">首頁</a>&nbsp;/
+					<a href="teachers.html">師資培育</a>&nbsp;/
+					防災培育課程--%>
+                        </div>
+                        <!-- /.path -->
+                        <div class="page_container">
+                            <div class="sidebar">
+                                <ul class="reset" <%=Request.Url.OriginalString.ToLower().Contains("fb") ? "" : "style='display:none;'" %>>
+                                    <li <%=Request.Url.OriginalString.ToLower().Contains("fb_list") ? "class='active'" : ""%>><a href="FB_List.aspx">FB 分數列表</a></li>
+                                    <li <%=Request.Url.OriginalString.ToLower().Contains("fb_chart") ? "class='active'" : ""%>><a href="FB_Chart.aspx">FB 區間分析</a></li>
+                                    <li <%=Request.Url.OriginalString.ToLower().Contains("fb_correct") ? "class='active'" : ""%>><a href="FB_Correct.aspx">FB 變異點列表</a></li>
+                                </ul>
+                                <ul class="reset" <%=Request.Url.OriginalString.ToLower().Contains("rss") ? "" : "style='display:none;'" %>>
+                                    <li <%=Request.Url.OriginalString.ToLower().Contains("rss_list") ? "class='active'" : ""%>><a href="RSS_List.aspx">RSS 分數列表</a></li>
+                                    <li <%=Request.Url.OriginalString.ToLower().Contains("rss_chart") ? "class='active'" : ""%>><a href="RSS_Chart.aspx">RSS 區間分析</a></li>
+                                    <li <%=Request.Url.OriginalString.ToLower().Contains("rss_correct") ? "class='active'" : ""%>><a href="RSS_Correct.aspx">RSS 變異點列表</a></li>
+                                </ul>
+                            </div>
+                            <!-- /.sidebar -->
+                            <div class="main">
+                                <asp:ContentPlaceHolder ID="Content" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </div>
+                            <!-- /.main -->
+                        </div>
+                        <!-- /.page_container -->
+                    </div>
+                    <!-- /.page -->
+
+                </div>
+                <!-- /.content -->
+                <footer class="footer">
+                    <%--                    <div class="accesskey"><a href="#" accesskey="F" title="下方功能區">:::</a></div>
+                    <img src="../vendor/main/images/aplus.jpg" alt="無障礙網站" title="無障礙網站" />
+                    <div class="">
+                        <p>版權教育部 Ministry of Education</p>
+                        <p>聯絡電話 TEL：(02)7712-9131</p>
+                        <p>E-mail信箱：<a href="mailto:ftts0728@mail.moe.gov.tw">ftts0728@mail.moe.gov.tw</a></p>
+                        <p>最佳瀏覽解析度為1280x800以上(建議使用IE 10以上、Chrome版本瀏覽器)</p>
+                    </div>--%>
+                </footer>
+                <!-- /.footer -->
+            </div>
+        </div>
+    </form>
+</body>
+</html>

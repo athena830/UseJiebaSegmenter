@@ -1,0 +1,102 @@
+.page{
+	padding: 10px 20px;
+	padding-top: 10px;	
+}
+.page_container{
+	background: url(../images/bg_sidebar.gif) repeat-y;
+	overflow: hidden;
+}
+.sidebar{
+	width: 220px;	
+	float: left;
+	background-color: #d8d4c8;
+	/*min-height: 100vh; */
+	height: inherit;
+}
+.main{	margin-left: 230px;}
+.page_inner{
+	background-color: white;
+	border:10px solid white;
+	margin: 0 5px;
+}
+
+/*--麵包屑--*/
+.path{
+	padding-left: 25px;
+	padding-top: 2px;
+	margin-bottom: 13px;
+	margin-left:15px;
+	background: url(../images/icons_path.svg) no-repeat left center;
+	color: #595757;
+	font-size: 13px;
+}
+.path a{ color: #e25d3a;}
+
+/*--側邊攔--*/
+.sidebar li{	border-top: 1px solid #df9d8c;}
+.sidebar li:first-child{	border-top:none;}
+.sidebar a{
+	display: block;
+	background-color: #e25d3a;
+	color: #fff;
+	padding: 13px 15px;	
+	border-left: 6px solid transparent;
+	text-decoration: none;
+}
+.sidebar a::before{
+	content: "";
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	background-color: #ffba74;
+	float: left;
+	margin-top: 7px;
+	margin-right: 11px;
+}
+.sidebar .active a{ 
+	border-left: 6px solid #1f9ea5;
+	background-color: #59626b;
+}
+.sidebar .active a::before{ background-color: #1f9ea5; }
+/*.sidebar a:hover{ 
+	background-color: #5b799d;
+}*/
+
+/*--page_title--*/
+.page_title{
+	line-height: 38px;
+	font-size: 20px;
+	color: white;
+	border-radius: 6px;
+	padding-left: 17px;	
+}
+.page_title img{
+	margin-right: 9px;
+	position: relative;
+	top:-2px;
+}
+
+/*--回上頁--*/
+.backBtn{
+	font-size: 12px;
+	text-align: right;
+}
+
+
+
+
+/*--table--*/
+.table_list{}
+.table_list>thead>tr>th{
+	/*background-color: #59626b;*/
+	color: white;
+	border: none;
+}
+.table_list{}
+.table_list{}
+
+
+.table_noborder>tbody>tr>td, .table_noborder>tbody>tr>th, .table_noborder>tfoot>tr>td, .table_noborder>tfoot>tr>th, .table_noborder>thead>tr>td, .table_noborder>thead>tr>th {
+    border:none;
+}
+.table_noborder{}
